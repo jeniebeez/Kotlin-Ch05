@@ -1,5 +1,6 @@
 fun main(args:Array<String>){
-    runSimulation("Guyal"){
+    runSimulation("Guyal",
+        ::printConstructionCost){
         playerName, numBuildings ->
         val currentYear = 2021
         println("增加$numBuildings 個房子")
@@ -18,5 +19,5 @@ inline fun runSimulation(playerName:String,
 
 fun printConstructionCost(numBuildings:Int){
     val cost = 500
-    println("construction cost: ${cost*numBuildings}")
+    println("建築成本: ${cost*numBuildings}")
 }
