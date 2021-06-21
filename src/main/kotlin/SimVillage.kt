@@ -8,9 +8,11 @@ fun main(args:Array<String>){
 }
 
 inline fun runSimulation(playerName:String,
+                         costPrinter:(Int) -> Unit,
                   greetingFunction:(String,Int)-> String){
     //Randomly select 1,2 or 3
     val numBuildings = (1..3).shuffled().last()
+    costPrinter(numBuildings)
     println(greetingFunction(playerName, numBuildings))
 }
 
