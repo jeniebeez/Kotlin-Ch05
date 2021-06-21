@@ -7,7 +7,7 @@ fun main(args:Array<String>){
     }
 }
 
-fun runSimulation(playerName:String,
+inline fun runSimulation(playerName:String,
                   greetingFunction:(String,Int)-> String){
     //Randomly select 1,2 or 3
     val numBuildings = (1..3).shuffled().last()
