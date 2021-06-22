@@ -18,3 +18,7 @@ fun configureGreetingFunction():(String) -> String{
         "歡迎來到Sim村莊，$playerName!(copyright $currentYear)"
     }
 }
+//just for git to add .gitignore after i commited my kotlin file
+//i use git restore --staged<file> to undo stage action
+//use git rm --cached<file> to remove unstaged file
+//git rm -f --cached<file> is force remove
